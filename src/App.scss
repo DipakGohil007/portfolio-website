@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Preahvihear&display=swap");
+@import "../src/styles/global.scss";
+@import "../src/styles/reset.scss";
+
+body {
+  font-family: "Preahvihear", sans-serif;
+  background-color: $clr-primary;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}

@@ -1,0 +1,21 @@
+@import "../../../styles/global.scss";
+
+.about-section {
+  position: relative;
+  margin-bottom: 130px;
+
+  .title {
+    @include font-Preahvihear(50px, $clr-white, 400, auto);
+    margin-bottom: 10px;
+  }
+
+  .desc {
+    @include font-Preahvihear(21px, $clr-white, 400, auto);
+    margin-bottom: 70px;
+  }
+
+  .sub-desc {
+    @include font-Preahvihear(22px, $clr-white, 400, auto);
+    max-width: 892px;
+  }
+}

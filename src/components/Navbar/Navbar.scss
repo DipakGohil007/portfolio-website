@@ -1,0 +1,47 @@
+@import "../../styles/global.scss";
+
+.navbar {
+  background-color: $clr-purple-100;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+
+    .logo {
+      height: 50px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 90px;
+      color: $clr-white;
+
+      a {
+        position: relative;
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          bottom: -2px;
+          height: 3px;
+          width: 0%;
+          background-color: $clr-white;
+          opacity: 0.7;
+          transition: all 0.3s ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+  }
+}

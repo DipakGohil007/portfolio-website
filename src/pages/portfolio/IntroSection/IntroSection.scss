@@ -1,0 +1,94 @@
+@import "../../../styles/global.scss";
+
+.intro-section {
+  height: 90vh;
+  position: relative;
+  margin-top: 10vh;
+  margin-bottom: 100px;
+
+  @media (max-width: 992px) {
+    margin-bottom: 50px;
+  }
+
+  .intro-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .me {
+      position: relative;
+      height: 400px;
+      width: 400px;
+
+      .me-avtar {
+        height: 260px;
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .gradient {
+        height: 430px;
+        position: absolute;
+        z-index: 1;
+      }
+
+      .greeting-wrapper {
+        position: absolute;
+        right: -130px;
+        top: 70px;
+
+        .greeting {
+          position: relative;
+          top: -50px;
+          @include font-Preahvihear(19px, $clr-white, 400, 0.5px);
+
+          .name {
+            @include font-Preahvihear(19px, $clr-white, 400, 0.5px);
+            color: #7127ba;
+          }
+
+          &::before {
+            content: url(../../../assets/images/Arrow.png);
+            position: absolute;
+            left: -100px;
+            bottom: -90px;
+          }
+        }
+      }
+    }
+
+    .intro {
+      .intro-top {
+        @include font-Preahvihear(17px, $clr-white, 400, 0.34px);
+        text-decoration: underline;
+        margin-bottom: 10px;
+      }
+
+      .intro-center {
+        max-width: 387px;
+        @include font-Preahvihear(50px, $clr-white, 400, 63px);
+        margin-bottom: 20px;
+
+        .cover {
+          position: relative;
+          @include font-Preahvihear(50px, $clr-white, 400, 63px);
+          color: #7127ba;
+
+          &::after {
+            content: url(../../../assets/images/Ellipse.png);
+            position: absolute;
+            top: 13%;
+            left: -10%;
+          }
+        }
+      }
+
+      .intro-bottom {
+        @include font-Preahvihear(14px, $clr-white, 400, 0.22px);
+      }
+    }
+  }
+}
