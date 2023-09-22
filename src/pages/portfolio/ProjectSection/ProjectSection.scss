@@ -1,0 +1,45 @@
+@import "../../../styles/global.scss";
+
+.project-section {
+  position: relative;
+  margin-bottom: 130px;
+
+  .section-title {
+    @include font-Preahvihear(50px, $clr-white, 400, normal);
+    margin-bottom: 60px;
+    text-align: center;
+
+    .highlight {
+      position: relative;
+      @include font-Preahvihear(50px, $clr-highlight, 400, normal);
+
+      &:before {
+        content: url(../../../assets/images/Ellipse.png);
+        position: absolute;
+        top: 17px;
+        left: 8px;
+        height: 100px;
+        width: 100%;
+        transform: scale(1.37);
+
+        @media (max-width: 576px) {
+          top: -3px;
+          left: -13px;
+          transform: scale(0.95);
+        }
+      }
+
+      @media (max-width: 576px) {
+        font-size: 35px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      font-size: 35px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: 80px;
+  }
+}

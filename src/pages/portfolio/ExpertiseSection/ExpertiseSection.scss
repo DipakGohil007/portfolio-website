@@ -2,6 +2,7 @@
 
 .expertise-section {
   position: relative;
+  margin-bottom: 130px;
 
   .expertise-title {
     @include font-Preahvihear(26px, $clr-white, 400, normal);
@@ -12,13 +13,21 @@
 
     .highlight {
       @include font-Preahvihear(26px, $clr-highlight, 400, normal);
+
+      @media (max-width: 576px) {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      font-size: 19px;
     }
   }
   .expertise-wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 760px;
     gap: 30px;
     margin: 0 auto;
 
@@ -26,10 +35,29 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
       background-color: $clr-purple-50;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-color: $clr-purple-30;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+        svg {
+          filter: drop-shadow(2px 4px 6px $clr-black);
+        }
+      }
+
+      @media (max-width: 576px) {
+        width: 80px;
+        height: 80px;
+      }
     }
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: 80px;
   }
 }

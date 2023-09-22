@@ -1,0 +1,61 @@
+@import "../../../styles/global.scss";
+
+.contact-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 80px;
+
+  .section-title {
+    position: relative;
+    @include font-Preahvihear(25px, $clr-highlight, 400, normal);
+    margin-bottom: 60px;
+
+    &:before {
+      content: url(../../../assets/images/Ellipse.png);
+      position: absolute;
+      top: -12px;
+      left: -33px;
+      height: 100px;
+      width: 100%;
+      transform: scale(0.8);
+    }
+
+    @media (max-width: 576px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  .description {
+    @include font-Preahvihear(16px, $clr-white, 400, normal);
+    text-align: center;
+    margin-bottom: 20px;
+    max-width: 700px;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 15px;
+    color: $clr-white;
+
+    .link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 40px;
+      border: 2px solid $clr-gray;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+
+      &:hover {
+        filter: opacity(0.5);
+      }
+    }
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: 40px;
+  }
+}

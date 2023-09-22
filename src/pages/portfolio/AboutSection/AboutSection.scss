@@ -3,19 +3,41 @@
 .about-section {
   position: relative;
   margin-bottom: 130px;
+  text-align: center;
 
   .title {
-    @include font-Preahvihear(50px, $clr-white, 400, auto);
+    @include font-Preahvihear(50px, $clr-white, 400, normal);
     margin-bottom: 10px;
+
+    .highlight {
+      @include font-Preahvihear(50px, $clr-highlight, 400, normal);
+
+      @media (max-width: 576px) {
+        font-size: 35px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      font-size: 35px;
+    }
   }
 
   .desc {
-    @include font-Preahvihear(21px, $clr-white, 400, auto);
+    @include font-Preahvihear(21px, $clr-white, 400, normal);
     margin-bottom: 70px;
   }
 
   .sub-desc {
-    @include font-Preahvihear(22px, $clr-white, 400, auto);
-    max-width: 892px;
+    @include font-Preahvihear(22px, $clr-white, 400, normal);
+    max-width: 900px;
+    margin: 0 auto;
+
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    margin-bottom: 80px;
   }
 }

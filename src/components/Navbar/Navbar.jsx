@@ -1,36 +1,46 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { images } from "../../assets/images/images";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
 const Navbar = () => {
+  const [hamburgerActive, setHamburgerActive] = useState(false);
+
+  const navRef = useRef();
+  const showNavbar = () => {
+    navRef.current.classList.toggle("hamburger");
+    setHamburgerActive(!hamburgerActive);
+  };
+
   return (
-    <div className="navbar ">
+    <div className="navbar" ref={navRef}>
       <div className="container navbar-container">
         <Link to="/">
           <img src={images.Logo} alt="logo" className="logo" />
         </Link>
         <div className="nav-links">
-          <Link to={"/"} className="link">
+          <Link to="/" className="link">
             Home
           </Link>
-          <Link to={"/"} className="link">
-            About
-          </Link>
-          <Link to={"/"} className="link">
-            Projects
+          <Link
+            to="https://github.com/DipakGohil007"
+            className="link"
+            target="_blank"
+          >
+            Github
           </Link>
           <Link
-            to={"https://www.linkedin.com/in/dipak-gohil-7286b2238/"}
+            to="https://www.linkedin.com/in/dipak-gohil-7286b2238/"
             className="link"
             target="_blank"
           >
             Connect
           </Link>
         </div>
-        {/* <button className="hamburger-menu-btn" onClick={showNavbar}>
-        <GiHamburgerMenu />
-      </button> */}
+        <button className="hamburger-menu-btn" onClick={showNavbar}>
+          <GiHamburgerMenu />
+        </button>
       </div>
     </div>
   );

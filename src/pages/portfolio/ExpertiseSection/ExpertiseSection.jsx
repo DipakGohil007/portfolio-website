@@ -10,27 +10,29 @@ import { ReactComponent as Npm } from "../../../assets/svg/npm.svg";
 import { ReactComponent as ReactIcon } from "../../../assets/svg/react.svg";
 import { ReactComponent as Sass } from "../../../assets/svg/sass.svg";
 import { ReactComponent as VsCode } from "../../../assets/svg/vsCode.svg";
+import { ReactComponent as Netlify } from "../../../assets/svg/netlify.svg";
 import "./ExpertiseSection.scss";
 
 const ExpertiseSection = () => {
   const techData = [
     <Html5 />,
-    <Bootstrap />,
     <Css3 />,
-    <Figma />,
-    <Git />,
-    <Github />,
     <JavaScript />,
-    <Npm />,
     <ReactIcon />,
     <Sass />,
+    <Git />,
+    <Github />,
+    <Bootstrap />,
+    <Figma />,
+    <Npm />,
     <VsCode />,
+    <Netlify />,
   ];
   return (
     <div className="expertise-section container">
       <h2 className="expertise-title">
         Explore My Diverse Range of &nbsp;
-        <span className="highlight">Professional Skills</span> and
+        <span className="highlight">Technical Skills</span> and
         <span className="highlight"> Expertise</span>
       </h2>
 

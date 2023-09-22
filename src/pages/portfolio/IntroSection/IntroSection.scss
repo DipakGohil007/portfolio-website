@@ -4,10 +4,12 @@
   height: 90vh;
   position: relative;
   margin-top: 10vh;
-  margin-bottom: 100px;
 
   @media (max-width: 992px) {
     margin-bottom: 50px;
+  }
+  @media (max-width: 576px) {
+    margin-bottom: 0;
   }
 
   .intro-section-container {
@@ -22,31 +24,50 @@
       width: 400px;
 
       .me-avtar {
-        height: 260px;
+        max-height: 260px;
         position: absolute;
         z-index: 2;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+        @media (max-width: 992px) {
+          max-height: 200px;
+        }
+
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
       .gradient {
         height: 430px;
         position: absolute;
         z-index: 1;
+
+        @media (max-width: 992px) {
+          max-height: 350px;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
 
       .greeting-wrapper {
         position: absolute;
-        right: -130px;
-        top: 70px;
+        right: -185px;
+        top: 77px;
 
         .greeting {
           position: relative;
           top: -50px;
-          @include font-Preahvihear(19px, $clr-white, 400, 0.5px);
+          @include font-Preahvihear(24px, $clr-white, 400, normal);
 
           .name {
-            @include font-Preahvihear(19px, $clr-white, 400, 0.5px);
+            @include font-Preahvihear(24px, $clr-white, 400, normal);
             color: #7127ba;
           }
 
@@ -54,22 +75,55 @@
             content: url(../../../assets/images/Arrow.png);
             position: absolute;
             left: -100px;
-            bottom: -90px;
+            bottom: -88px;
+
+            @media (max-width: 992px) {
+              left: -91px;
+              bottom: -80px;
+              transform: scale(0.8) rotate(353deg);
+            }
+
+            @media (max-width: 768px) {
+              display: none;
+            }
+          }
+
+          @media (max-width: 768px) {
+            top: unset;
           }
         }
+
+        @media (max-width: 992px) {
+          right: -140px;
+        }
+
+        @media (max-width: 768px) {
+          position: relative;
+          right: unset;
+          top: unset;
+        }
+      }
+
+      @media (max-width: 768px) {
+        height: unset;
+        width: unset;
       }
     }
 
     .intro {
       .intro-top {
-        @include font-Preahvihear(17px, $clr-white, 400, 0.34px);
+        @include font-Preahvihear(20px, $clr-white, 400, 10%);
         text-decoration: underline;
-        margin-bottom: 10px;
+        margin-bottom: 12px;
+
+        @media (max-width: 576px) {
+          line-height: normal;
+        }
       }
 
       .intro-center {
-        max-width: 387px;
-        @include font-Preahvihear(50px, $clr-white, 400, 63px);
+        max-width: 487px;
+        @include font-Preahvihear(60px, $clr-white, 400, 73px);
         margin-bottom: 20px;
 
         .cover {
@@ -82,13 +136,37 @@
             position: absolute;
             top: 13%;
             left: -10%;
+
+            @media (max-width: 576px) {
+              top: 5%;
+              left: -30%;
+              transform: scale(0.72);
+            }
           }
+
+          @media (max-width: 576px) {
+            font-size: 40px;
+            line-height: 50px;
+          }
+        }
+
+        @media (max-width: 576px) {
+          font-size: 40px;
+          line-height: 50px;
         }
       }
 
       .intro-bottom {
-        @include font-Preahvihear(14px, $clr-white, 400, 0.22px);
+        @include font-Preahvihear(16px, $clr-white, 400, normal);
       }
+    }
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 40px;
+    }
+    @media (max-width: 576px) {
+      align-items: flex-start;
     }
   }
 }
