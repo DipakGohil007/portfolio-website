@@ -17,7 +17,7 @@ const ProjectSection = () => {
       ProjectTitle: "Codext",
       SubTitle: "Featured Project",
       Description:
-        "Developed Codext, a dynamic Xbox game website using React, showcasing a wide range of Xbox games. Leveraged the power of Ant Design (antd) components for a polished user interface and utilized SCSS for efficient styling.",
+        "Crafted an engaging React and SCSS-powered landing page 'Codext', seamlessly blending modern web technologies for an immersive user experience. A testament to strong front-end development skills.",
       ProjectLink: "https://codext.onrender.com",
       ProjectImg: images.Codext,
     },
@@ -33,7 +33,7 @@ const ProjectSection = () => {
 
   return (
     <div className="project-section container">
-      <h2 className="section-title">
+      <h2 className="section-title" data-aos="fade-up">
         My <span className="highlight">Projects</span>
       </h2>
       {projectData.map((projectData, index) => (

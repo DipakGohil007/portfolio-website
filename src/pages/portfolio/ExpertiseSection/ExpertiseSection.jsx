@@ -15,31 +15,73 @@ import "./ExpertiseSection.scss";
 
 const ExpertiseSection = () => {
   const techData = [
-    <Html5 />,
-    <Css3 />,
-    <JavaScript />,
-    <ReactIcon />,
-    <Sass />,
-    <Git />,
-    <Github />,
-    <Bootstrap />,
-    <Figma />,
-    <Npm />,
-    <VsCode />,
-    <Netlify />,
+    {
+      tech: <Html5 />,
+      techName: "Html5",
+    },
+    {
+      tech: <Css3 />,
+      techName: "Css3",
+    },
+    {
+      tech: <JavaScript />,
+      techName: "JavaScript",
+    },
+    {
+      tech: <ReactIcon />,
+      techName: "ReacJs",
+    },
+    {
+      tech: <Sass />,
+      techName: "Sass",
+    },
+    {
+      tech: <Git />,
+      techName: "Git",
+    },
+    {
+      tech: <Github />,
+      techName: "Github",
+    },
+    {
+      tech: <Bootstrap />,
+      techName: "Bootstrap",
+    },
+    {
+      tech: <Figma />,
+      techName: "Figma",
+    },
+    {
+      tech: <Npm />,
+      techName: "Npm",
+    },
+    {
+      tech: <VsCode />,
+      techName: "VsCode",
+    },
+    {
+      tech: <Netlify />,
+      techName: "Netlify",
+    },
   ];
   return (
     <div className="expertise-section container">
-      <h2 className="expertise-title">
+      <h2 className="expertise-title" data-aos="fade-up">
         Explore My Diverse Range of &nbsp;
         <span className="highlight">Technical Skills</span> and
         <span className="highlight"> Expertise</span>
       </h2>
 
-      <div className="expertise-wrapper">
+      <div
+        className="expertise-wrapper"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="0"
+      >
         {techData.map((techData, index) => (
-          <div className="tech" key={index}>
-            {techData}
+          <div className="tech" key={index} data-aos="flip-up">
+            {techData.tech}
+            <p className="tech-name">{techData.techName}</p>
           </div>
         ))}
       </div>

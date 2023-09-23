@@ -11,15 +11,27 @@ import "./ContactSection.scss";
 const ContactSection = () => {
   return (
     <div className="contact-section container">
-      <h2 className="section-title">Contact</h2>
-      <p className="description">
+      <h2 className="section-title" data-aos="fade-up">
+        Contact
+      </h2>
+      <p
+        className="description"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-offset="0"
+      >
         I'm deeply committed to designing flawless and visually captivating user
         experiences, and I'm equally excited to connect with you. Your feedback,
         inquiries, and ideas are not only welcome but also essential in igniting
         my creativity.
       </p>
 
-      <div className="social-links">
+      <div
+        className="social-links"
+        data-aos="fade-up"
+        data-aos-delay="250"
+        data-aos-offset="0"
+      >
         <Link
           to="https://instagram.com/dipak__gohil__?igshid=MzMyNGUyNmU2YQ=="
           className="link"

@@ -17,6 +17,7 @@
     justify-content: center;
     align-items: center;
     height: 100%;
+    user-select: none;
 
     .me {
       position: relative;
@@ -59,7 +60,7 @@
       .greeting-wrapper {
         position: absolute;
         right: -185px;
-        top: 77px;
+        top: 50px;
 
         .greeting {
           position: relative;
@@ -113,11 +114,11 @@
     .intro {
       .intro-top {
         @include font-Preahvihear(20px, $clr-white, 400, 10%);
-        text-decoration: underline;
         margin-bottom: 12px;
 
         @media (max-width: 576px) {
           line-height: normal;
+          margin-bottom: 0;
         }
       }
 

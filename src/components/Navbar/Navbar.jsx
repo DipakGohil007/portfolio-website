@@ -16,11 +16,11 @@ const Navbar = () => {
   return (
     <div className="navbar" ref={navRef}>
       <div className="container navbar-container">
-        <Link to="/">
+        <Link to="#">
           <img src={images.Logo} alt="logo" className="logo" />
         </Link>
         <div className="nav-links">
-          <Link to="/" className="link">
+          <Link to="#" className="link">
             Home
           </Link>
           <Link

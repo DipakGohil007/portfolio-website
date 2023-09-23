@@ -6,7 +6,7 @@
   margin-bottom: 40px;
 
   .sub-title {
-    @include font-Preahvihear(16px, $clr-highlight, 600, 0.6px);
+    @include font-Preahvihear(16px, $clr-highlight, 600, 10%);
     @media (max-width: 768px) {
       text-align: center;
     }
