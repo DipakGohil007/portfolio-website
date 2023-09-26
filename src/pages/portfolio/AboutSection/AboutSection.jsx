@@ -4,7 +4,7 @@ import "./AboutSection.scss";
 const AboutSection = () => {
   return (
     <div className="about-section container">
-      <h2 className="title" data-aos="fade-up">
+      <h2 className="title" data-aos="fade-up" data-aos-delay="900">
         I'm a <span className="highlight">Frontend Developer</span>.
       </h2>
       {/* <p className="desc" data-aos="fade-up" data-aos-delay="150">Currently, I'm a Frontend Developer at Simform,</p> */}

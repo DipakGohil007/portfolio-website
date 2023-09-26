@@ -170,4 +170,7 @@
       align-items: flex-start;
     }
   }
+  @media (max-width: 576px) {
+    height: 70vh;
+  }
 }
