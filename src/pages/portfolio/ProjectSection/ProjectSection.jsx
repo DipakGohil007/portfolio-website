@@ -6,6 +6,14 @@ import { images } from "../../../assets/images/images";
 const ProjectSection = () => {
   const projectData = [
     {
+      ProjectTitle: "Two Good Co",
+      SubTitle: "Featured Project",
+      Description:
+        "Two Good Co is a web project I've been working on, using HTML, SCSS, JavaScript, and some fantastic libraries like GSAP and Locomotive. While the entire project was a fantastic learning experience.",
+      ProjectLink: "https://two-good-co.netlify.app/",
+      ProjectImg: images.TwoGoodCo,
+    },
+    {
       ProjectTitle: "exStore",
       SubTitle: "Featured Project",
       Description:
