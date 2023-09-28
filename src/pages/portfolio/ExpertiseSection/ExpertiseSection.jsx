@@ -29,7 +29,7 @@ const ExpertiseSection = () => {
     },
     {
       tech: <ReactIcon />,
-      techName: "ReacJs",
+      techName: "ReactJs",
     },
     {
       tech: <Sass />,
