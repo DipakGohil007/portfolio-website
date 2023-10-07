@@ -17,16 +17,26 @@ const IntroSection = () => {
         </div>
 
         <div className="intro">
-          <h3 className="intro-top" data-aos="fade-up" data-aos-delay="700">
+          <h3
+            className="intro-top"
+            data-aos="fade-up"
+            data-aos-delay="700"
+            data-aos-offset="0"
+          >
             A Developer who
           </h3>
-          <h1 className="intro-center" data-aos="fade-up" data-aos-delay="750">
+          <h1
+            className="intro-center"
+            data-aos="fade-up"
+            data-aos-delay="750"
+            data-aos-offset="0"
+          >
             Judges a book by its <span className="cover"> cover</span>...
           </h1>
           <p
             className="intro-bottom"
             data-aos="fade-up"
-            data-aos-delay="800"
+            data-aos-delay="750"
             data-aos-offset="0"
           >
             Because if the cover does not impress you what else can?

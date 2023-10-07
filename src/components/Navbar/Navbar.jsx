@@ -20,8 +20,12 @@ const Navbar = () => {
           <img src={images.Logo} alt="logo" className="logo" />
         </Link>
         <div className="nav-links">
-          <Link to="#" className="link">
-            Home
+          <Link
+            to="https://drive.google.com/file/d/12-JRIzcSTkeBsclk2oP5vQMn21IGwWDW/view?usp=sharing"
+            className="link"
+            target="_blank"
+          >
+            Resume
           </Link>
           <Link
             to="https://github.com/DipakGohil007"
