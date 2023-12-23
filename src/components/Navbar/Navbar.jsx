@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { images } from "../../assets/images/images";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { Link } from "react-router-dom";
@@ -7,14 +7,10 @@ import "./Navbar.scss";
 const Navbar = () => {
   const [hamburgerActive, setHamburgerActive] = useState(false);
 
-  const navRef = useRef();
-  const showNavbar = () => {
-    navRef.current.classList.toggle("hamburger");
-    setHamburgerActive(!hamburgerActive);
-  };
+  const showNavbar = () => setHamburgerActive(!hamburgerActive);
 
   return (
-    <div className="navbar" ref={navRef}>
+    <div className={`navbar ${hamburgerActive === false ? "" : "hamburger"} `}>
       <div className="container navbar-container">
         <Link to="#">
           <img src={images.Logo} alt="logo" className="logo" />
